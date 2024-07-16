@@ -1,0 +1,6 @@
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #8d9399;
+  outline: none;
+  box-shadow: 0 0 5px rgba(171, 177, 184, 0.5);
+}

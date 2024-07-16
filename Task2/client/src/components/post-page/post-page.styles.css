@@ -1,0 +1,103 @@
+div.post-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div.post-page h1 {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+div.post-page time {
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  color: #888;
+  margin: 10px 0;
+}
+
+div.post-page div.author {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+div.post-page div.image {
+  max-height: 400px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+div.post-page div.image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+div.post-page div.image img:hover {
+  transform: scale(1.05);
+}
+
+div.post-page a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+div.post-page a:hover {
+  color: #0056b3;
+}
+
+div.content p {
+  line-height: 1.7rem;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+div.content li {
+  margin-bottom: 10px;
+}
+
+div.edit-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.post-page a.edit-btn,
+div.post-page a.delete-btn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+div.post-page a.edit-btn:hover,
+div.post-page a.delete-btn:hover {
+  background-color: #6a6666;
+}
+
+a svg {
+  height: 20px;
+}
+
+.btn-gap {
+  margin-right: 10px;
+}
