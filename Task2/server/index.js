@@ -14,7 +14,7 @@ const corsOptions = {
   credentials: true,
   origin:
     process.env.NODE_ENV === "production"
-      ? "https://mern-blog-api-psi.vercel.app/"
+      ? "https://mern-blog-api-fawn.vercel.app/"
       : process.env.DEV_ORIGIN,
 };
 
