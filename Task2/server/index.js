@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: true,
+  origin: 'https://mern-blog-frontend-sage-mu.vercel.app'
   credentials: true,
 };
 
