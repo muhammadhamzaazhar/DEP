@@ -1,0 +1,55 @@
+.button {
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: min-content;
+  padding: 16px 26px;
+  box-shadow: 1px 20px 35px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+}
+
+.button.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.button.secondary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.button.isDisabled,
+.button.isLoading {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.button.flex {
+  flex: 1;
+}
+
+.button.small {
+  padding: 10px 28px;
+}
+
+.button.outlined {
+  background: transparent;
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.button.full {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,131 @@
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 170px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 320px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 600px) {
+  .image {
+    height: 240px;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  color: var(--text-primary);
+  top: 14px;
+  right: 14px;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.top:hover {
+  background-color: var(--primary);
+}
+
+.top:hover .image {
+  opacity: 0.9;
+}
+
+.top:hover .menu {
+  display: flex;
+}
+
+.menu-item {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: white;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.rate {
+  position: absolute;
+  z-index: 10;
+  color: var(--text-primary);
+  bottom: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.details {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  padding: 4px 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary) + 60;
+  text-decoration: line-through;
+  text-decoration-color: var(--text-secondary) + 50;
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: 500;
+  color: green;
+}

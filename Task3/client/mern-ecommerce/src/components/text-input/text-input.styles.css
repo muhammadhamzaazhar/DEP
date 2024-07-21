@@ -1,0 +1,111 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--primary);
+  padding: 0px 4px;
+}
+
+.label.error {
+  color: var(--red);
+}
+
+.label.small {
+  font-size: 8px;
+}
+
+.label.popup {
+  color: var(--popup-text-secondary);
+}
+
+.outlined-input {
+  border-radius: 8px;
+  border: 0.5px solid var(--text-secondary);
+  background-color: transparent;
+  color: var(--text-primary);
+  outline: none;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.outlined-input:focus-within {
+  border-color: var(--secondary);
+}
+
+.outlined-input.error {
+  border-color: var(--red);
+}
+
+.outlined-input.chipable-input {
+  background: var(--card);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.outlined-input.small {
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.outlined-input.popup {
+  color: var(--popup-text-secondary);
+  border: 0.5px solid var(--popup-text-secondary + 60);
+}
+
+.input {
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input.small {
+  font-size: 12px;
+}
+
+.input.popup {
+  color: var(--popup-text-secondary);
+}
+
+.error {
+  font-size: 12px;
+  margin: 0px 4px;
+  color: var(--red);
+}
+
+.error.small {
+  font-size: 8px;
+}
+
+.chip-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: var(--primary + 10);
+  color: var(--primary);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

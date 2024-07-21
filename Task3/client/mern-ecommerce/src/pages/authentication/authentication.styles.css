@@ -1,0 +1,89 @@
+.container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: var(--bg);
+}
+
+.left {
+  flex: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 10;
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  position: relative;
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    flex: 1;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: var(--primary + 20);
+}
+
+.text {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: 16px;
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+.text-button {
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}

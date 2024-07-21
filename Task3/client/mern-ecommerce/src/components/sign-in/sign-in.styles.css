@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.text-button {
+  width: 100%;
+  text-align: end;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.text-button:hover {
+  color: var(--primary);
+}
+
+.input-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}

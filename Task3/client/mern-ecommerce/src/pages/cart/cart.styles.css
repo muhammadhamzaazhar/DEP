@@ -1,0 +1,152 @@
+.container {
+  padding: 20px 30px;
+  padding-bottom: 200px;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--bg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 12px;
+  }
+}
+
+.section {
+  width: 100%;
+  max-width: 1400px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  gap: 28px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title.center {
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  padding: 12px;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 750px) {
+  .left {
+    flex: 1.2;
+  }
+}
+
+.table {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.table.head {
+  margin-bottom: 22px;
+}
+
+.table-item {
+  flex: 1;
+}
+
+.table-item.bold {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.counter {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--text-secondary + 40);
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.product {
+  display: flex;
+  gap: 16px;
+}
+
+.img {
+  height: 80px;
+}
+
+.protitle {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.prodesc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prosize {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 750px) {
+  .right {
+    flex: 0.8;
+  }
+}
+
+.subtotal {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}

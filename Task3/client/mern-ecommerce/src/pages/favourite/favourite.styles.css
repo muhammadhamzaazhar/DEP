@@ -1,0 +1,50 @@
+.container {
+  padding: 20px 30px;
+  padding-bottom: 200px;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--bg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 12px;
+  }
+}
+
+.section {
+  max-width: 1400px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title.center {
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .card-wrapper {
+    gap: 14px;
+  }
+}

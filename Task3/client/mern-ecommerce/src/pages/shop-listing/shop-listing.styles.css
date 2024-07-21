@@ -1,0 +1,93 @@
+.container {
+  padding: 20px 30px;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: var(--bg-color);
+}
+
+.container.mobile {
+  padding: 20px 12px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.filters {
+  width: 100%;
+  height: fit-content;
+  overflow-y: hidden;
+  padding: 20px 16px;
+}
+
+.filters.desktop {
+  height: 100%;
+  width: 230px;
+  overflow-y: scroll;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.products {
+  padding: 12px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.products.desktop {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card-wrapper.mobile {
+  gap: 14px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selectable-item {
+  cursor: pointer;
+  display: flex;
+  border: 1px solid var(--text-secondary-50);
+  color: var(--text-secondary-90);
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.selectable-item.selected {
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  background: var(--text-primary-30);
+  font-weight: 500;
+}
