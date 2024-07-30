@@ -33,3 +33,13 @@ Full-stack e-commerce website using React for the frontend, Node.js and Express 
   - Product Management: Add, update, delete, and view products seamlessly.
   - Shopping Cart: User-friendly interface for adding products to the cart and managing cart items.
   - Responsive Design: Optimized for both desktop and mobile devices for a seamless shopping experience.
+
+# Task 4:
+
+Real-time features like chat or notifications using WebSockets in a web application.
+
+## Features:
+  - Real-Time Messaging: Instant messaging with no delays.
+  - User Authentication: Secure login and registration.
+  - Message History: Persistent chat history for all users.
+
