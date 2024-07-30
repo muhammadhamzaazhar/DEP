@@ -67,6 +67,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Welcome!");
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/conversation", conversationRoutes);
 app.use("/api/message", messageRoutes);
